@@ -1,0 +1,412 @@
+/*****All form related styles*****/
+/*login part start*/
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #000;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #444;
+}
+
+.extra-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-links a {
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+  color: #666;
+}
+/*--login part close--*/
+
+/*--register part start --*/
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register-box {
+  background: #fff;
+  padding: 30px;
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  top: 20%;
+}
+
+.register-box h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #000;
+}
+
+/* Terms */
+.terms {
+  text-align: left;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.terms a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.terms a:hover {
+  color: #444;
+}
+
+/* Register Button */
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-register:hover {
+  background: #444;
+}
+
+/* Guest Access */
+.guest-access {
+  margin-top: 20px;
+}
+
+.guest-access a {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.guest-access a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/*--register part close--*/
+/*--logout link part start--*/
+.logout-link {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* spacing between text and icon */
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+  align-items: center;
+  
+}
+
+.logout-link i {
+  transform: rotate(0deg) !important; /* prevent auto-rotate */
+  display: inline-block;
+  font-size: 15px;
+  color: black;
+}
+/*--logout part close--*/
+
+/**Order part Start**/
+
+/* Base Layout */
+.checkout-body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  overflow-x: hidden; /* prevent horizontal scrollbar */
+}
+
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Form & Summary Sections */
+.checkout-form-section,
+.checkout-summary-section {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Titles */
+.checkout-title {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #222;
+}
+
+/* Labels */
+.checkout-label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Inputs and Textareas */
+.checkout-input,
+.checkout-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  transition: border 0.3s;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+.checkout-input:focus,
+.checkout-textarea:focus {
+  border-color: #528FF0;
+  outline: none;
+}
+
+/* Button */
+.checkout-btn {
+  width: 100%;
+  padding: 14px;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #444;
+}
+
+/* Table */
+.checkout-table {
+  table-layout: fixed;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.checkout-th,
+.checkout-td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  text-align: left;
+  word-break: break-word;
+}
+
+.checkout-total-item {
+  font-weight: bold;
+  text-align: right;
+  background: #fafafa;
+}
+
+.checkout-total-val {
+  font-weight: bold;
+  background: #fafafa;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 992px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .checkout-form-section,
+  .checkout-summary-section {
+    padding: 30px;
+  }
+
+  .checkout-th,
+  .checkout-td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .checkout-form-section,
+  .checkout-summary-section {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .checkout-title {
+    font-size: 20px;
+  }
+
+  .checkout-input,
+  .checkout-textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .checkout-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .checkout-th,
+  .checkout-td {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+/* Responsive: Small Mobile */
+@media (max-width: 400px) {
+  .checkout-title {
+    font-size: 18px;
+  }
+
+  .checkout-input,
+  .checkout-textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .checkout-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .checkout-th,
+  .checkout-td {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+/* Extra: Prevent table overflow on very small screens */
+@media (max-width: 360px) {
+  .checkout-table {
+    font-size: 12px;
+  }
+
+  .checkout-th,
+  .checkout-td {
+    padding: 4px;
+    word-break: break-word;
+  }
+}
+
+/**order part End**/

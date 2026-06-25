@@ -1,0 +1,461 @@
+   /**Home Part Start**/
+    /* Base Styles */
+    body.admin-dashboard-body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    .dashboard-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 15px;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .dashboard-header h2 {
+      font-size: 24px;
+      margin: 0 0 10px 0;
+    }
+
+    .dashboard-logout-btn {
+      padding: 8px 14px;
+      background: #dc3545;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .dashboard-logout-btn:hover {
+      background: #c82333;
+    }
+
+    /* Cards Grid */
+    .dashboard-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .dashboard-card {
+      flex: 1 1 calc(33.333% - 20px);
+      background: #fff;
+      padding: 25px 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      box-sizing: border-box;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .dashboard-card-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .dashboard-card-count {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .dashboard-card-btn {
+      padding: 8px 12px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .dashboard-card-btn:hover {
+      background: #444;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .dashboard-card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .dashboard-card {
+        flex: 1 1 100%;
+        padding: 20px;
+      }
+
+      .dashboard-card-title {
+        font-size: 1.1rem;
+      }
+
+      .dashboard-card-count {
+        font-size: 1.7rem;
+      }
+
+      .dashboard-card-btn {
+        font-size: 13px;
+        padding: 7px 10px;
+      }
+
+      .dashboard-header h2 {
+        font-size: 20px;
+      }
+
+      .dashboard-logout-btn {
+        font-size: 13px;
+        padding: 6px 12px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .dashboard-card-title {
+        font-size: 1rem;
+      }
+
+      .dashboard-card-count {
+        font-size: 1.5rem;
+      }
+
+      .dashboard-card-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+
+      .dashboard-header h2 {
+        font-size: 18px;
+      }
+    }
+   /**Home Part End**/
+   
+   /**Chat bot part start**/
+    .containercht {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        padding-top: 40px;
+        margin-top: 80px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    textarea,
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    button {
+        background: #222;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #444;
+    }
+
+    .message {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .success {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .error {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .warning {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    /**Chat bot part end**/
+
+    /***Admin Login Part start***/
+      /* Base Body */
+    body.admin-login-body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Login Box */
+    .admin-login-box {
+      width: 100%;
+      max-width: 420px;
+      padding: 28px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+    }
+
+    /* Title */
+    .admin-login-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    /* Error Messages */
+    .admin-error-list {
+      margin-bottom: 15px;
+      padding: 12px;
+      background: #f8d7da;
+      color: #842029;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .admin-error-list ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    /* Form Inputs */
+    .admin-login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .admin-form-label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .admin-form-input {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      transition: border 0.3s;
+    }
+
+    .admin-form-input:focus {
+      outline: none;
+      border-color: #528FF0;
+    }
+
+    /* Submit Button */
+    .admin-login-btn {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      background-color: #222;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .admin-login-btn:hover {
+      background-color: #444;
+    }
+
+    /* Info Text */
+    .admin-login-info {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .admin-login-box {
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .admin-login-title {
+        font-size: 20px;
+      }
+
+      .admin-form-input {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .admin-login-btn {
+        font-size: 15px;
+        padding: 12px;
+      }
+
+      .admin-error-list {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .admin-login-info {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .admin-login-title {
+        font-size: 18px;
+      }
+
+      .admin-form-input {
+        font-size: 13px;
+        padding: 9px;
+      }
+
+      .admin-login-btn {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .admin-error-list {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+    /**Admin login part End**/
+    /**Help Part Start**/
+     /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Heading */
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Cards */
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    
+    }
+
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    ol li {
+      margin-bottom: 8px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 5px 8px;
+      text-align: left;
+    }
+
+    /* Row and Columns */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .col-md-4 {
+      flex: 1 1 calc(33.333% - 20px);
+      box-sizing: border-box;
+    }
+
+    /* Footer text */
+    .text-center {
+      text-align: center;
+    }
+
+    .text-muted {
+      color: #666;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .col-md-4 {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .col-md-4 {
+        flex: 1 1 100%;
+      }
+    }
+    /**Help Part End**/

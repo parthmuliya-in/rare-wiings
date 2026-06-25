@@ -1,0 +1,103 @@
+
+event deligetion
+ajax
+re formate dhl,dtdc
+junit
+prompt{Scalable
+Session
+Security
+reliability,
+maintainability
+reusable
+}
+
+refrence : https://www.essentialscanada.com/ (expired Domain)
+ext check : https://www.superkicks.in/
+use greb on : https://www.grabon.in/coupon-codes/
+razor pay dashbord: dashboard.razorpay.com/app/payments/pay_RIdmExNKsYkuJe?init_page=Payments
+~ do not change inline css in get_product_detail.php
+
+Neshessary:
+1/2 js with php and css
+code upgretion{
+  user side
+  {
+    add to cart
+    cart
+    error page(use message-box.ss and messsage-box.js file for display)
+    product
+    remove cart
+    thankyou
+    wishlist
+  }
+}
+after proceed to checkout clear cart and wishlist
+
+
+✔️
+change :
+!add user get throught mail and user dashbord newslater,offer
+shipping intigretin (free and paid) && Shipping integration (automated tracking)
+testing  
+Thank-you note with brand message
+
+
+🔑 upgread site:
+scalebality ,code reduce(fatch and give particuler css for each like part ),manitain,robust,loading time ,smooth,exception handling,file Management,vslidation,sql secure,backup
+testing,
+url upgretion 
+ligality,right,crtf 
+write  doc with working flow,credential,importance,addithnal checklist 
+
+
+ ✔️what we done {
+  ✔️add out of stock option in products
+  ✔️add zooming view image
+  ✔️make sepret file for each 
+  ✔️reduce css from thos file which can not consider js with css
+  ✔️chatbot code upgretion  
+  ✔️invoice Management
+  ✔️show password in password fild
+  ✔️do condition on chatbot
+  ✔️ v2 in js for get product details
+  ✔️ in adminside all movable js will move in js/main.js file 
+  ✔️checkout page (it will use this Convert amount to paise (integer only) ready to use it)
+  code upgrads{
+    admin side{
+      ✔️login
+      ✔️manage chatbot
+      ✔️coupon
+      ✔️add product
+    }
+    user side{
+      ✔️login
+      ✔️register
+      ✔️forgot_password !
+      ✔️header
+    }
+  }  
+  
+ }
+
+ 
+
+
+ 🔑 Frontend: 
+	{
+reduce css,js and external links like bootstrap,jquery
+use font icon to change static icon (use icon.html page)
+make it responsive (divide into small part and make it with comment )
+reduce code load (common item like label ,input ,button, card, form, common hover effect ,color ,table , font style head tags,popup effect  )
+}
+
+🔑 Backend :
+code reduce ,reusable 
+scelebal ,valrable
+common redirection , 
+
+
+
+🔑 Remove file and folder :
+folder :product-page-imge ,rare-wing-new doc 
+file :dhl_test.php ,for_an_image.php,note.txt,adjust(js).txt,adjust(css).txt
+if not use shiprocket,

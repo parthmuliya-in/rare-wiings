@@ -1,0 +1,453 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+}
+
+/* Reset */
+.rw-navbar * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Container */
+.rw-navbar {
+  background: #1c1c1c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Logo */
+.rw-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f1c40f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.rw-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.rw-nav-links li {
+  position: relative;
+}
+
+.rw-nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.rw-nav-links a:hover {
+  color: #f1c40f;
+}
+
+/* Dropdown */
+.rw-dropdown {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background: #333;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+  flex-direction: column;
+  z-index: 1200;
+}
+
+.rw-dropdown li a {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.rw-dropdown li a:hover {
+  background: #444;
+  color: #f1c40f;
+}
+
+/* Hover dropdown (desktop) */
+.rw-nav-links li:hover .rw-dropdown {
+  display: flex;
+}
+
+/* Hamburger */
+.rw-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.rw-hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.rw-hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.rw-hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.rw-hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .rw-nav-links {
+    position: absolute;
+    top: 58px;
+    left: -100%;
+    flex-direction: column;
+    background: #2d2d2d;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    transition: left 0.3s ease;
+  }
+
+  .rw-nav-links.active {
+    left: 0;
+  }
+
+  .rw-hamburger {
+    display: flex;
+  }
+
+  .rw-nav-links li:hover .rw-dropdown {
+    display: none;
+  }
+
+  .rw-nav-links li.active .rw-dropdown {
+    display: flex;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .rw-logo {
+    font-size: 18px;
+  }
+
+  .rw-nav-links a {
+    font-size: 15px;
+  }
+}
+
+
+
+/*--Form Part start--*/
+h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.form-container {
+  background: #fff;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: black;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #393838ff;
+}
+
+
+/*Responsive Part*/
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/**Product Manage**/
+/* Basic Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table,
+th,
+td {
+  border: 1px solid #444;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+th {
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #f1f1f1;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+input,
+button,
+select {
+  padding: 6px 10px;
+  margin: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button,
+.btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button:hover,
+.btn:hover {
+  background: #f1c40f;
+  color: #000;
+}
+
+/* Edit Form */
+.edit-form {
+  background: #fafafa;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Responsive Table Wrapper */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+
+  th,
+  td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  button,
+  .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+
+  table,
+  th,
+  td {
+    font-size: 13px;
+  }
+
+  .edit-form {
+    padding: 10px;
+  }
+}
+
+
+.coupon-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.coupon-form input[type="text"],
+.coupon-form input[type="number"],
+.coupon-form input[type="date"] {
+  padding: 5px;
+}
+
+.coupon-form button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.coupons-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coupons-table th,
+.coupons-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.inline-form {
+  display: inline-flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 25px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  z-index: 9999;
+}
+
+.message-box.success {
+  border-left: 6px solid #28a745;
+}
+
+.message-box.error {
+  border-left: 6px solid #dc3545;
+}
